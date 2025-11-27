@@ -1,0 +1,8 @@
+<div *ngIf="!plant">Loading plant...</div>
+
+<div *ngIf="plant">
+  <h2>{{ plant.name }}</h2>
+  <p>{{ plant.description }}</p>
+  <p><strong>Type:</strong> {{ plant.type }}</p>
+  <p><strong>Location:</strong> {{ plant.location }}</p>
+</div>

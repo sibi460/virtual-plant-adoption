@@ -1,0 +1,9 @@
+<h2>Plant List Component Loaded</h2>
+<p>plants length = {{ plants.length }}</p>
+<ul>
+  <li *ngFor="let plant of plants">
+    <a [routerLink]="['/plants', plant.id]">
+      {{ plant.name }}
+    </a>
+  </li>
+</ul>
